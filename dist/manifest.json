@@ -1,0 +1,150 @@
+{
+  "name": "Avaya Workspaces for Zendesk",
+  "author": {
+    "name": "John Doe",
+    "email": "support@zendesk.com",
+    "url": "https://www.zendesk.com"
+  },
+  "defaultLocale": "en",
+  "private": true,
+  "location": {
+    "support": {
+      "top_bar": "assets/iframe.html"  
+    }
+  },
+  "version": "1.0",
+  "frameworkVersion": "2.0",
+  "parameters": [
+    { 
+      "name": "ReqGeneralInfo",
+      "default": {
+        "reqInternalName": "AvayaWorkspacesForZendesk",
+        "reqDisplayName": "Avaya Workspaces for Zendesk",
+        "reqAdapterUrl": "https://localhost:4200",
+        "reqSoftphoneHeight": "640",
+        "reqSoftphoneWidth": "300",
+        "activeSoftphoneHeight": "640",
+        "activeSoftphoneWidth": "300",
+        "idleSoftphoneHeight": "520"
+      }
+    },
+    { 
+      "name": "ServerConfig",
+      "default": {
+        "serverHostName": "https://eus2-01.dev.ws-nonprod.avayacloud.com",
+        "useLocalSessionSharing": "N"
+      }
+    },
+    { 
+      "name": "DialingOptions",
+      "default": {
+        "reqOutsidePrefix": "9",
+        "reqLongDistPrefix": "1",
+        "reqInternationalPrefix": "011",
+        "dialInternalLength": "4",
+        "dialCountryCode": "1",
+        "dialLocalLength": "7",
+        "dialLongDistanceLength": "10",
+        "emergencyCodes": ""
+      }
+    },
+    {
+      "name": "LogOptions",
+      "default": {
+        "callLogEnabled": "N",
+        "transactionLogCustomField1": "case_id",
+        "transactionLogCustomField2": "ticket_id",
+        "interactionHistorySize": "5"
+      }
+    },
+    { 
+      "name": "SoftphoneOptions",
+      "default": {
+        "language": "en_US",
+        "startWorkButtons": "US",
+        "startWorkState": "NR",
+        "autoStartWorkEnabled": "N",
+        "autoSignOutEnabled": "N",
+        "clickToDial": "Y",
+        "clickToConsultEnabled": "Y",
+        "manualNotReadySelectionEnabled": "Y",
+        "manualAfterContactWorkEnabled": "Y",
+        "transferButtonEnabled":  "Y",
+        "toggleChannelsEnabled": "N",
+        "conferenceButtonEnabled":  "Y",
+        "serverResponseTimeout": "120",
+        "autoAcceptInteraction": "N",
+        "logginSecurityLevel": "H",
+        "logPersistenceDuration": "0",
+        "dropIncomingInteraction": "Y",
+        "manualOutboundInteraction": "Y",
+        "customerJourneyButtonEnabled": "Y",
+        "enableNotifications": "L",
+        "setAgentStateToNotReadyOnRona": "Y",
+        "reportsEnabled": "N",
+        "advancedCustomerHistoryEnabled": "Y",
+        "debounceTime": "",
+        "voicemailNumber": "",
+        "notificationsEnabled": "Y"
+      }
+    },
+    { 
+      "name": "CallScreenPopOptions",
+      "default": {
+        "screenPopOnAni": "Y",
+        "screenPopOnDnis": "N",
+        "screenPopOnConsultOrCompleted": "C",
+        "internationalAnisearch": "N",
+        "suppressScreenPop": "N",
+        "waitBeforePerformScreenpop": "N",
+        "customParam1": "",
+        "customParam2": "",
+        "customParam3": "",
+        "customParam4": "",
+        "customParam5": "",
+        "customParam6": "",
+        "customParam7": "",
+        "customParam8": "",
+        "customParam9": "",
+        "customParam10": ""
+      }
+    },
+    { 
+      "name": "ReasonCodesEnabled",
+      "default": {
+        "auxReasonEnabled": "N",
+        "dispositionCodesEnabled": "N"
+      }
+    },
+    { 
+      "name": "LabelOptions",
+      "default": {
+        "ready": "",
+        "notReady": "",
+        "goReady": "",
+        "goNotReady": "",
+        "afterContactWork": "",
+        "goAfterContactWork": "",
+        "afterContactWorkExtended": "",
+        "startWork": "",
+        "pendingNotReady": "",
+        "pendingAfterContactWork": "",
+        "dispositionCodes": "",
+        "cancel": "",
+        "activate": "",
+        "activateAgent": "",
+        "toStartWork": "",
+        "startWorkPending": "",
+        "finishWork": "",
+        "finishWorkPending": "",
+        "connected": "",
+        "welcomeConnected": "",
+        "signOut": "",
+        "offline": "",
+        "showOfflineAgents":  "",
+        "hideOfflineAgents":  "",
+        "forceLogout": ""
+      }
+    }
+  ]
+}
