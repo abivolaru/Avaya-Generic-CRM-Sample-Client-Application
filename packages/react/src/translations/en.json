@@ -1,0 +1,15 @@
+{
+  "app": {
+    "name": "Example App",
+    "short_description": "Short Description",
+    "long_description": "Long Description",
+    "installation_instructions": "Configure the following app settings, then click Install:...",
+    "title": "Example App"
+  },
+  "ticket_sidebar": {
+    "title": "Hello from Ticket Side Bar"
+  },
+  "modal": {
+    "title": "Hello from Modal"
+  }
+}

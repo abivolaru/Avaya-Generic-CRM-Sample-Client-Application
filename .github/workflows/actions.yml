@@ -1,0 +1,32 @@
+name: repo-checks
+
+on:
+  pull_request:
+    branches:
+    - master
+
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: true
+      matrix:
+        include:
+          - task: Lint
+            allow_failures: false
+            command: pnpm lerna run lint
+          - task: Test
+            allow_failures: false
+            command: pnpm lerna run test
+    steps:
+    - uses: zendesk/checkout@v2
+    - name: Use Node.js
+      uses: zendesk/setup-node@v3
+      with:
+        node-version: 18.12.1
+    - name: Install pnpm
+      run: npm install -g pnpm
+    - name: install packages
+      run: pnpm install
+    - name: ${{ matrix.env.TASK }}
+      run: TASK=${{ matrix.env.TASK }} ${{ matrix.command }}

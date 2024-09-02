@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "lerna": "^8.1.5"
+  },
+  "name": "app_scaffolds",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ]
+}
